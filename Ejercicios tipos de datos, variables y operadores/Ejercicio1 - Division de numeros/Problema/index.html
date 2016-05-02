@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Division de numeros</title>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<fieldset>
+    <legend>Operaciones con dos numeros</legend>
+  <form id="form1" name="form1">
+  	<table>
+  		<tr>
+  			<td>Ingrese numero</td>
+  			<td><input type="text" name="textnum1" id="a" onkeyup="suma()"></td>
+  		</tr>
+  		<tr>
+  			<td>Ingrese numero</td>
+  			<td><input type="text" name="textnum2" id="b" onkeyup="suma()"></td>
+  		</tr>
+  		<tr>
+  			<td>Resultado</td>
+  			<td><input type="text" name="resultado" value=" "></td>
+  		</tr>
+  		<tr>
+  			<td><button type="button" onclick="valor()" name="opera" value="opera">Sumar</button></td>
+  			<td><button type="button" onclick="divide()" name="opera2" value="opera2">dividir</button></td>
+  			<td><button type="button" onclick="multiplica()" name="opera3" value="opera3">multiplicar</button></td>
+  			<td><button type="button" onclick="resta()" name="opera4" value="opera4">restar</button></td>
+  		</tr>
+  	</table>
+  </form>
+  </fieldset>
+</body>
+</html>
