@@ -1,6 +1,6 @@
 // Escribe aquí tu codigo Javascript
 var palabra;
-palabra = prompt ('Por favor introduce una de estas palabras "casa, mesa, perro o gato" para traducir:');
+palabra = prompt('Por favor introduce una de estas palabras "casa, mesa, perro o gato" para traducir:');
 if (palabra =="") { alert ('No has introducido ninguna palabra'); }
         switch (palabra) {
             case 'casa': 
