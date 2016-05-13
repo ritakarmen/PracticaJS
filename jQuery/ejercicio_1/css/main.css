@@ -1,4 +1,4 @@
-#gameboard{
+#jueguito{
 	width: 360px;
 	margin: 40px auto 0px auto;
 }
@@ -6,10 +6,14 @@
 	clear: both;
 	overflow: hidden;
 }
-.square{
+.caja{
 	float: left;
 	width: 119px;
-	height: 119px;
+	height: 90px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 50px;
+	padding-top: 35px;
 }
 .bottom{
 	border-bottom: 1px solid black;
@@ -17,11 +21,11 @@
 .right{
 	border-right: 1px solid black;
 }
-.ex{
-	background: red;
+.fa.fa-times{
+	background: #BB8F9B;
 }
-.oh{
-	background: blue;
+.fa.fa-circle-o{
+	background: #6E70B9;
 }
 /*#tabla{
 	width: 800px;
