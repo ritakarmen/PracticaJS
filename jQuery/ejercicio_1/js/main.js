@@ -8,14 +8,14 @@ $(document).ready(function(){
 		}else{
 			if(player === 1){
 				cajaSelected.addClass('fa fa-times');
-				if (checkIfPlayerWon('fa fa-times')) {
+				if (inicioJuego('fa fa-times')) {
 					alert('GANOOO el jugador '+player);
 				}else{
 				player = 2;
 				}
 			}else{
 				cajaSelected.addClass('fa fa-circle-o');
-				if (checkIfPlayerWon('fa fa-circle-o')) {
+				if (inicioJuego('fa fa-circle-o')) {
 					alert('GANOOO el jugador '+player);
 				}else{
 				player = 1;
@@ -23,7 +23,7 @@ $(document).ready(function(){
 			}
 		}
 	})
-	function checkIfPlayerWon(symbol){
+	function inicioJuego(symbol){
 		if ($('.cj1').hasClass(symbol)&& $('.cj2').hasClass(symbol)&& $('.cj3').hasClass(symbol)) {
 			return true;
 		}else if ($('.cj4').hasClass(symbol)&& $('.cj5').hasClass(symbol)&& $('.cj6').hasClass(symbol)) {
